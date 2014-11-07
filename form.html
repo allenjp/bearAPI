@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css">
+
+	<script src="lib/scripts/jquery-2.1.1.min.js"></script>
+	<script src="scripts/scripts.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form method="post" action="http://localhost:8080/api/bears" role="form">
+					<div class="form-group">
+						<span id="bear-name-span"><strong>Name:</strong></span>
+						<input type="text" class="form-control" name="name" placeholder="Enter bear name">
+					</div>
+					<div class="form-group" id="bear-age-div">
+						<span id="bear-age-span"><strong>Age:</strong></span>
+						<input type="text" class="form-control" name="age" id="bear-age-input" placeholder="Enter bear age" onkeypress='validate(event)'>
+					</div>
+					<div class="form-group">
+						<span id="bear-color-span"><strong>Color:</strong></span>
+						<input type="text" class="form-control" name="color" placeholder="Enter bear color">
+					</div>
+					<button type="submit" class="btn btn-default" id="bear-submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
